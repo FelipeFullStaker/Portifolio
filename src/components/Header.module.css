@@ -1,0 +1,135 @@
+/* Header.module.css */
+
+/* Container principal */
+.header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo à esquerda */
+.logo {
+  flex: 1;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #4cc9f0;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Menu de navegação DESKTOP */
+.navMenu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navLink:hover {
+  color: #4cc9f0;
+  border-bottom: 2px solid #4cc9f0;
+}
+
+/* Link do GitHub especial */
+.githubLink {
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+.githubLink:hover {
+  background-color: #4cc9f0;
+  color: #1a1a2e;
+  border-color: #4cc9f0;
+}
+
+/* Botão menu MOBILE */
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Menu MOBILE (quando aberto) */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #1a1a2e;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.mobileMenu.open {
+  display: flex;
+}
+
+.mobileLink {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.mobileLink:hover {
+  background-color: rgba(76, 201, 240, 0.1);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+  
+  /* Esconde menu desktop em mobile */
+  .navMenu {
+    display: none;
+  }
+  
+  /* Mostra botão hamburguer em mobile */
+  .menuButton {
+    display: block;
+  }
+  
+  /* Ajusta logo em mobile */
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+  
+  .logo p {
+    font-size: 0.8rem;
+  }
+}
