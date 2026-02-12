@@ -359,3 +359,246 @@
 .project-card:nth-child(3) {
   animation-delay: 0.2s;
 }
+
+/* ===== CARDS NO ESTILO DA IMAGEM ===== */
+
+/* Fundo preto */
+body {
+  background-color: #0a0a0a;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Remove gradiente roxo do fundo */
+body {
+  background: #0a0a0a; /* Preto sólido */
+}
+
+/* CARDS DE PROJETOS - Cor exata da imagem */
+.project-card {
+  background: #1e1e2f; /* Roxo escuro/azulado igual da imagem */
+  border: 1px solid #2d2d44;
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #6d28d9;
+  box-shadow: 0 12px 28px rgba(109, 40, 217, 0.3);
+  background: #25253a;
+}
+
+/* Título dos cards */
+.project-card h3 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Texto dos cards */
+.project-card p {
+  color: #b0b0d0;
+  line-height: 1.6;
+}
+
+/* Tags de tecnologia */
+.tech-tag {
+  background: #2d2d44;
+  color: #c4b5fd;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: 1px solid #6d28d9;
+}
+
+/* Botão dos cards */
+.project-button {
+  background: transparent;
+  color: #c4b5fd;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1.5px solid #6d28d9;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.project-button:hover {
+  background: #6d28d9;
+  color: white;
+  border-color: #8b5cf6;
+}
+
+/* CARDS DE HABILIDADES - Mesma cor */
+.skill-category {
+  background: #1e1e2f;
+  border: 1px solid #2d2d44;
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.skill-category h3 {
+  color: #c4b5fd;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #2d2d44;
+  padding-bottom: 0.8rem;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-category li {
+  color: #e0e0ff;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #2a2a3a;
+}
+
+.skill-category li:before {
+  content: '▹';
+  color: #8b5cf6;
+  margin-right: 0.8rem;
+}
+
+/* TIMELINE - Mesma cor */
+.timeline-item:before {
+  background: #2d2d44;
+}
+
+.timeline-date {
+  background: #1e1e2f;
+  color: #c4b5fd;
+  border: 1px solid #6d28d9;
+  box-shadow: none;
+}
+
+.timeline-content {
+  background: #1e1e2f;
+  border-left: 4px solid #6d28d9;
+  border-radius: 12px;
+}
+
+.timeline-content h4 {
+  color: white;
+}
+
+.timeline-content p {
+  color: #b0b0d0;
+}
+
+/* SEÇÕES - Mantendo o preto */
+.section {
+  background: transparent;
+  backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* Títulos das seções */
+.section h2 {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: #6d28d9;
+  border-radius: 2px;
+}
+
+/* HOME SECTION - Mantém o preto */
+.home-section {
+  background: transparent;
+  color: white;
+  padding: 2rem 0;
+  box-shadow: none;
+}
+
+.home-section h2 {
+  color: white;
+}
+
+.home-section h2::after {
+  background: #6d28d9;
+}
+
+.highlight {
+  background: #1e1e2f;
+  border-left: 4px solid #6d28d9;
+  padding: 1.2rem;
+  border-radius: 8px;
+  color: #e0e0ff;
+}
+
+/* FOOTER - Preto com detalhe roxo */
+.footer {
+  background: #0a0a0a;
+  border-top: 1px solid #1e1e2f;
+  color: #b0b0d0;
+}
+
+.footer-links a {
+  color: #c4b5fd;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* GRIDS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Efeito de hover suave */
+.project-card, .skill-category, .timeline-content {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover, .skill-category:hover, .timeline-content:hover {
+  background: #25253a;
+  border-color: #6d28d9;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .projects-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .project-card,
+  .skill-category {
+    padding: 1.5rem;
+  }
+}
