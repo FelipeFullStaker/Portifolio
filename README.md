@@ -11,7 +11,7 @@
 
 Este é meu portfólio pessoal desenvolvido durante minha transição de carreira para **Desenvolvimento Full Stack**. O objetivo foi criar um site profissional para apresentar meus projetos, habilidades e evolução como desenvolvedor.
 
-**🔗 Acesse online:** [em breve - deploy será adicionado]
+**🔗 Acesse online:** [[(https://felipefullstaker.github.io/Portifolio/)]]
 
 ---
 
